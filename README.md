@@ -9,7 +9,7 @@ When modeling API response data in our data warehouse we needed a way to referen
 ## Example Usage
 
 ```python
-from hashami import dict_hasher
+from hashami import hasher as h
 
 outgoing_params = {
     'foo': 'bar',
@@ -17,5 +17,5 @@ outgoing_params = {
     'quux': 'quuz'
 }
 
-params_hash = dict_hasher(outgoing_params)
+params_hash = h.hash_dict(outgoing_params)
 ```
